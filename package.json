@@ -1,0 +1,24 @@
+{
+  "name": "business_casual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./assets/scss/main.scss ./assets/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirek-t/business_casual.git"
+  },
+  "author": "miroslaw.truminski@gmail.com",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/mirek-t/business_casual/issues"
+  },
+  "homepage": "https://github.com/mirek-t/business_casual#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "sass": "^1.42.1"
+  }
+}
