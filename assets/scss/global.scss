@@ -1,0 +1,37 @@
+body {
+  background-image: linear-gradient(
+      rgba(47, 23, 15, 0.65),
+      rgba(47, 23, 15, 0.65)
+    ),
+    url("./../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+$f-color: (
+  "primary": $primary,
+  "primary-light": $primary-light,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+);
+
+@each $name, $value in $f-color {
+  .fc-#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-5rem {
+  font-size: 5rem;
+}
