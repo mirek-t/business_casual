@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <title>Business Casual</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header>
@@ -16,7 +17,86 @@
         >
         <span class="fs-5rem fc-primary-light lh-4rem">Business Casual</span>
       </h1>
-      <nav class="d-block fc-light fs-2rem text-center text-uppercase">Nav</nav>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-secondary">
+      <div class="container-fluid container-md container sm mx-auto">
+        <a class="navbar-brand text-uppercase d-lg-none fc-primary" href="#"
+          >Start Bootstrap</a
+        >
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a
+                class="nav-link text-uppercase fc-light"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase fc-light" href="#">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase fc-light" href="#">Products</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase fc-light">Store</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="my-1-5">
+      <div class="container container-xl container-lg containermd container-sm">
+        <div class="position-relative d-block">
+          <img
+            src="./assets/images/girl.jpg"
+            alt="Girl"
+            class="img-fluid mb-3 mb-lg-0 rounded"
+          />
+          <div
+            class="
+              position-absolute
+              mb-3
+              bg-primary-light
+              text-center
+              p-5
+              rounded
+            "
+          >
+            <h2 class="mb-4">
+              <span class="d-block fs-1rem text-uppercase">Fresh Coffee</span>
+              <span class="d-block fs-3rem text-uppercase">Worth Drinking</span>
+            </h2>
+            <p class="mb-3">
+              Every cup of our quality artisan coffee starts with locally
+              sourced, hand picked ingredients. Once you try it, our coffee will
+              be a blissful addition to your everyday morning routine - we
+              guarantee it!
+            </p>
+            <div class="mx-auto d-block">
+              <a
+                href="#"
+                class="btn btn-primary btn-lx px-4 py-2rem bg-primary border-0"
+                >Visit Us Today!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

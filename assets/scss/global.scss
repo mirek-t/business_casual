@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
+  background-attachment: fixed;
 }
 
 $f-color: (
@@ -20,16 +21,28 @@ $f-color: (
 
 @each $name, $value in $f-color {
   .fc-#{$name} {
-    color: $value;
+    color: $value !important;
   }
 
   .bg-#{$name} {
-    background-color: $value;
+    background-color: $value !important;
   }
+}
+
+.fs-1rem {
+  font-size: 1rem;
 }
 
 .fs-2rem {
   font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
 }
 
 .fs-5rem {
