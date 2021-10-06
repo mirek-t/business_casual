@@ -1,5 +1,6 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
-@import "./variables";
-@import "./functions";
+@import "./partials/variables";
+@import "./partials/functions";
+@import "./partials/fonts";
 @import "./spacing";
 @import "./global";

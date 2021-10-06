@@ -1,0 +1,99 @@
+$f-color: (
+  "primary": $primary,
+  "primary-light": $primary-light,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+);
+
+@each $name, $value in $f-color {
+  .fc-#{$name} {
+    color: $value !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
+}
+
+.fs-5rem {
+  font-size: 5rem;
+}
+
+.fs-14 {
+  font-size: rem(14px);
+}
+
+.fs-19 {
+  font-size: rem(19px);
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("./../fonts/raleway-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("./../fonts/raleway-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora Regular";
+  src: url("./../fonts/lora-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Thin";
+  src: url("./../fonts/raleway-thin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.raleway-B {
+  font-family: "Raleway Bold", sans-serif;
+}
+
+.raleway-R {
+  font-family: "Raleway Regular", sans-serif;
+}
+
+.lora-R {
+  font-family: "Lora Regular", sans-serif;
+}
+
+.raleway-T {
+  font-family: "Raleway Thin", sans-serif;
+}
+
+.list-hours {
+  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.italic {
+  font-style: italic;
+}

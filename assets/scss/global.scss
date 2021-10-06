@@ -11,40 +11,17 @@ body {
   background-attachment: fixed;
 }
 
-$f-color: (
-  "primary": $primary,
-  "primary-light": $primary-light,
-  "secondary": $secondary,
-  "light": $light,
-  "dark": $dark,
-);
-
-@each $name, $value in $f-color {
-  .fc-#{$name} {
-    color: $value !important;
-  }
-
-  .bg-#{$name} {
-    background-color: $value !important;
-  }
+.bg-section {
+  background-color: rgba(230, 167, 86, 0.9);
+  padding: rem(80px) 0;
+  margin: rem(80px) 0;
 }
 
-.fs-1rem {
-  font-size: 1rem;
+.max-content {
+  max-width: rem(950px);
+  width: 100%;
 }
 
-.fs-2rem {
-  font-size: 2rem;
-}
-
-.fs-3rem {
-  font-size: 3rem;
-}
-
-.fs-4rem {
-  font-size: 4rem;
-}
-
-.fs-5rem {
-  font-size: 5rem;
+.nobull {
+  list-style-type: none;
 }
